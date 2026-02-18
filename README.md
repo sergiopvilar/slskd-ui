@@ -49,11 +49,11 @@ Create a `docker-compose.yml`:
 ```yaml
 services:
   slskd-ui:
-    build: .
+    image: ghcr.io/sergiopvilar/slskd-ui:latest
     ports:
       - "3000:3000"
     environment:
-      REACT_APP_SLSKD_SERVER_URL: https://slskd.example.com  # your slskd instance
+      REACT_APP_SLSKD_SERVER_URL: https://slskd.example.com
     restart: unless-stopped
 ```
 

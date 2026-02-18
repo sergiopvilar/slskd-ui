@@ -6,13 +6,7 @@ The UI runs as a standalone React app and connects to any slskd instance you spe
 
 ## Configuration
 
-Point the UI at your slskd instance using **`SLSKD_SERVER_URL`** (or **`REACT_APP_SLSKD_SERVER_URL`** for build-time injection). The value should be the base URL of your slskd server (including protocol, no trailing slash).
-
-**Examples:**
-
-- `http://localhost:5030` — local slskd (default HTTP port)
-- `https://slskd.example.com` — slskd behind HTTPS
-- `http://192.168.1.10:5030` — slskd on your LAN
+Point the UI at your slskd instance using **`REACT_APP_SLSKD_SERVER_URL`**. The value should be the base URL of your slskd server (including protocol, no trailing slash).
 
 The app uses this URL for both the REST API (`/api/v0`) and the SignalR hub (`/hub`).
 
